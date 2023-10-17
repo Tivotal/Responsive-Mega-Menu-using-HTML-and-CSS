@@ -89,6 +89,7 @@ nav .wrapper {
 }
 
 .links li:hover .dropdown {
+  transition: all 0.2s ease;
   top: 70px;
   opacity: 1;
   visibility: visible;
