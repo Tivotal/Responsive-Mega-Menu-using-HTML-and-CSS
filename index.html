@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega Menu | Tivotal</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <a href="#" class="logo">Tivotal</a>
+
+        <input type="radio" name="menu" id="menu-btn" />
+        <input type="radio" name="menu" id="close-btn" />
+
+        <ul class="links">
+          <label for="close-btn" class="btn close-btn">
+            <i class="fas fa-times"></i>
+          </label>
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li>
+            <a href="#" class="hide">Courses</a>
+            <input type="checkbox" id="mega" />
+            <label for="mega">Courses</label>
+            <div class="megaMenu">
+              <div class="content">
+                <div class="row">
+                  <img src="img.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Programming</header>
+                  <ul class="megalinks">
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Dart</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Development</header>
+                  <ul class="megalinks">
+                    <li><a href="#">Algorithms</a></li>
+                    <li><a href="#">Data Structure</a></li>
+                    <li><a href="#">Bootstrap</a></li>
+                    <li><a href="#">LangChain</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Marketing</header>
+                  <ul class="megalinks">
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Personas</a></li>
+                    <li><a href="#">management</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="#">Tools</a></li>
+          <li>
+            <a href="#" class="hide">Company</a>
+            <input type="checkbox" id="dropdown" />
+            <label for="dropdown">Company</label>
+            <ul class="dropdown">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="btns">
+          <a href="#" class="login"> <i class="far fa-user"></i> Login </a>
+
+          <label for="menu-btn" class="btn menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      </div>
+    </nav>
+
+    <div class="home">
+      <div class="title">
+        Responsive Mega Menu <br />
+        using HTML and CSS
+      </div>
+    </div>
+  </body>
+</html>
